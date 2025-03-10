@@ -1,0 +1,34 @@
+.cmItem {
+  width: 85%;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.cmItem:nth-of-type(even) {
+  margin-left: 15%;
+}
+
+.cmTxt {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.cmWicon svg,
+.cmWicon ~ span {
+  color: #545454;
+  font-size: 18px;
+}
+
+.cmValue {
+  color: black;
+  font-weight: 500;
+}
+
+.cmItem:nth-of-type(7),
+.cmItem:nth-of-type(8) {
+  border: none;
+}

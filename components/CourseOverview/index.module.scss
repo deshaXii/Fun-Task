@@ -1,0 +1,144 @@
+.courseOverview h2 {
+  font-size: 24px;
+  margin-bottom: 50px;
+  color: #333;
+  font-weight: 600;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.progressBar {
+  flex: 1;
+  height: 5px;
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 5px;
+  background-color: #6abd8a;
+}
+.uMark {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #c8c8c8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 32px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #485293;
+  position: relative;
+}
+
+.boxOver {
+  border: 1px solid #e5e5e5;
+  padding: 40px 15px;
+  margin-top: 60px;
+}
+
+.uMark:after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: #c8c8c8;
+}
+
+.uMark ~ span {
+  font-size: 12px;
+}
+.progressText {
+  font-size: 14px;
+  color: #333;
+  left: 63%;
+  position: absolute;
+  transform: translate(-70%, -50%);
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+  align-items: center;
+  top: calc(50% - 12px);
+}
+
+.week {
+  margin-bottom: 20px;
+}
+
+.week h3 {
+  font-size: 22px;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.week p {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.5;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.txtWicon {
+  display: flex;
+  column-gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details > div {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+  padding: 15px 0;
+  align-items: center;
+}
+.details > div:last-of-type {
+  padding-bottom: 0;
+}
+.index-module-scss-module__ybVSwW__details > div:last-of-type {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.details p {
+  font-size: 14px;
+  color: #333;
+}
+
+.quesTitle {
+  width: 44%;
+  display: inline-block;
+  line-height: 1.4;
+}
+
+.questions {
+  background-color: #e0f7fa;
+  color: #00796b;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+.time {
+  background-color: #ffebee;
+  color: #d32f2f;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-left: 10px;
+}

@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "@/styles/videoPlayer.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: #f5f9fa;
+}
+
+.curriculm-icons ul {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.curriculm-icons ul li a {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #f5f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #808080;
+  border-radius: 40px;
+  transition: all 0.3s linear;
+}
+
+.curriculm-icons {
+  margin-top: 40px;
+}
+
+.curriculm-icons ul li a:hover {
+  color: #f5f9fa;
+  background: #808080;
+}
+.container {
+  max-width: 1300px !important;
+  margin: 0 auto !important;
+}
