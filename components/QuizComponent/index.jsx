@@ -26,13 +26,16 @@ const questions = [
   },
 ];
 
-const QuizComponent = () => {
+const QuizComponent = ({ taskTime }) => {
   const [enabled, setEnabled] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
   // Use useLocalStorage for answers and timeLeft
   const [answers, setAnswers] = useLocalStorage("quizAnswers", {});
-  const [timeLeft, setTimeLeft] = useLocalStorage("quizTimeLeft", 600); // 10 minutes in seconds
+  const [timeLeft, setTimeLeft] = useLocalStorage(
+    `quizTimeLeft${taskTime}`,
+    taskTime * 60
+  ); // 10 minutes in seconds
 
   useEffect(() => {
     if (timeLeft === 0) return;

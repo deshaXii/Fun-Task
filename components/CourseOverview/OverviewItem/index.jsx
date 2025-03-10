@@ -22,6 +22,11 @@ const OverviewItem = ({
 }) => {
   const overviewIcon = icon;
   let [isOpen, setIsOpen] = useState(false);
+  let taskTime;
+  if (questionDuration) {
+    taskTime = Number(questionDuration.replace("MINUTES", ""));
+    console.log(taskTime, "asdad");
+  }
 
   return (
     <div>
@@ -31,7 +36,7 @@ const OverviewItem = ({
         className="relative z-50"
       >
         <div className="taskPopup">
-          <QuizComponent />
+          <QuizComponent taskTime={taskTime ? taskTime : 10} />
         </div>
       </Dialog>
       <div
