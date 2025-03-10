@@ -35,7 +35,12 @@ body {
   border-radius: 46px;
   transition: all 0.3s linear;
 }
-
+div#headlessui-portal-root {
+  position: fixed;
+  z-index: 2;
+  background: rgb(0 0 0 / 80%);
+  inset: 0;
+}
 .curriculm-icons {
   margin-top: 40px;
 }
@@ -55,4 +60,15 @@ body {
   .container {
     margin: 0 15px !important;
   }
+}
+
+.taskPopup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #445bc3;
+  width: 400px;
+  padding: 20px;
+  border-radius: 20px;
 }

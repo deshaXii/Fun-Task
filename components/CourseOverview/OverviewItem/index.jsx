@@ -1,6 +1,14 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { TbLock } from "react-icons/tb";
 import { FiFileText } from "react-icons/fi";
+import {
+  Description,
+  Dialog,
+  DialogPanel,
+  DialogTitle,
+} from "@headlessui/react";
+import QuizComponent from "@/components/QuizComponent";
 
 const OverviewItem = ({
   isLocked,
@@ -13,8 +21,19 @@ const OverviewItem = ({
   questionDuration,
 }) => {
   const overviewIcon = icon;
+  let [isOpen, setIsOpen] = useState(false);
+
   return (
     <div>
+      <Dialog
+        open={isOpen}
+        onClose={() => setIsOpen(false)}
+        className="relative z-50"
+      >
+        <div className="taskPopup">
+          <QuizComponent />
+        </div>
+      </Dialog>
       <div
         className={styles.txtWicon}
         style={{ width: isQuestion ? "100%" : "" }}
@@ -24,21 +43,26 @@ const OverviewItem = ({
         </span>
         <p
           style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
             width: "100%",
           }}
         >
           {!isQuestion ? (
             title && title
           ) : (
-            <>
+            <span
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                width: "100%",
+              }}
+              onClick={() => setIsOpen(true)}
+            >
               <span className={styles.quesTitle}>{questionTitle}</span>
 
               <span className={styles.questions}>{questionsNumbers}</span>
               <span className={styles.time}>{questionDuration}</span>
-            </>
+            </span>
           )}
         </p>
       </div>
