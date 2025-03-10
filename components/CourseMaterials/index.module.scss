@@ -14,3 +14,8 @@ h3.sectionTitle {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media (max-width: 768px) {
+  .courseMaterial {
+    display: block;
+  }
+}

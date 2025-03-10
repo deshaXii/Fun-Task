@@ -21,8 +21,8 @@ const CourseDetails = () => {
         <div className={styles.container}>
           <div className="course-content">
             <CourseHeader />
-            <CourseMaterials data={courseMaterialsData} />
-            <Comments data={comments} />
+            <CourseMaterials id="course-materials" data={courseMaterialsData} />
+            <Comments id="course-comments" data={comments} />
             <AddComment />
           </div>
           <div>

@@ -49,6 +49,7 @@
   height: 90px;
   display: flex;
   cursor: pointer;
+  color: #e54860;
   align-items: center;
   justify-content: center;
   background: #fff;
@@ -62,4 +63,11 @@
 }
 .video-player iframe {
   border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .course-thumb .play-video-icon {
+    height: 80px;
+    width: 80px;
+  }
 }

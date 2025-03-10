@@ -13,7 +13,14 @@
   margin: 0 auto;
   max-width: 1300px;
 }
-
+@media (max-width: 768px) {
+  .breadcrumb {
+    margin-bottom: 10px;
+  }
+  .container {
+    margin: 0 15px;
+  }
+}
 ul.breadcrumbList {
   list-style: none;
   display: flex;

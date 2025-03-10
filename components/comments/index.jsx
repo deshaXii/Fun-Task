@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./index.module.scss";
 import Image from "next/image";
 
-const Comments = ({ data }) => {
+const Comments = ({ data, id }) => {
   return (
-    <section className={styles.comments}>
+    <section id={id} className={styles.comments}>
       <h3 className={styles.sectionTitle}>Comments</h3>
       <div className={styles.commentsList}>
         {data.map((comment) => (

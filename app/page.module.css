@@ -9,6 +9,12 @@
   max-width: 1300px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .container {
+    margin: 0 15px;
+    display: block;
+  }
+}
 .courseTitle {
   margin-bottom: 15px;
   font-size: 42px;
