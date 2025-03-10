@@ -115,7 +115,7 @@ const QuizComponent = () => {
           ))}
         </ul>
       </div>
-      <div className="quesControlBtns">
+      <div className={styles.quesControlBtns}>
         <button
           onClick={goToPreviousQuestion}
           disabled={currentQuestionIndex === 0}
